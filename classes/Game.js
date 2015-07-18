@@ -16,6 +16,7 @@ function Game(options)
     this.summary = $('.summary');
     this.scoresLink = $('#all-records');
     this.tableRecords = $('.table-records');
+    this.tabsContainer = $('#tabs');
 
     this.startBtn = $('.start');
 
@@ -29,6 +30,7 @@ function Game(options)
         self.startBtn.on('click', self.prepare);
         self.scoresLink.on('click', self.ajaxGetRecords);
 
+        self.tabsContainer.tabs();
         self.ui.trackBar();
         self.ui.modalScore();
     };

@@ -38,40 +38,51 @@
     </div>
 
     <div class="container">
-        <div class="push"></div>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Игра</a></li>
+                <li><a href="#tabs-2">Уровень</a></li>
+                <li><a href="#tabs-3">Рекорды</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div class="tools">
+                    <div class="btn-container">
+                        <input type="button" value="Старт" class="start"/>
+                    </div>
 
-        <div class="tools">
-            <div class="levels">
-                <div class="track-bar"></div>
-
-                <div class="hidden">
-                    <label for="level1"><input type="radio" id="level1" value="1" name="level" class="lvl" checked/>Легко</label>
-                    <label for="level2"><input type="radio" id="level2" value="2" name="level" class="lvl"/>Средне</label>
-                    <label for="level3"><input type="radio" id="level3" value="3" name="level" class="lvl"/>Сложно</label>
+                    <div class="score">
+                        <span class="label">Фрукты:</span>
+                        <span class="count">0</span>
+                    </div>
                 </div>
 
-                <div class="lvl-status">
-                    <span>Легкий</span>
-                </div>
+                <div id="matrix"></div>
+            </div>
+            <div id="tabs-2">
+                <div class="levels">
+                    <div class="track-bar"></div>
 
-                <div class="btn-container">
-                    <input type="button" value="Старт" class="start"/>
+                    <div class="hidden">
+                        <label for="level1"><input type="radio" id="level1" value="1" name="level" class="lvl"/>Легко</label>
+                        <label for="level2"><input type="radio" id="level2" value="2" name="level" class="lvl" checked/>Средне</label>
+                        <label for="level3"><input type="radio" id="level3" value="3" name="level" class="lvl"/>Сложно</label>
+                    </div>
+
+                    <div class="lvl-status">
+                        <span>Легкий</span>
+                    </div>
                 </div>
             </div>
 
-            <div class="score">
-                <span class="label">Фрукты:</span>
-                <span class="count">0</span>
+            <div id="tabs-3">
+                <div class="info">
+                    <a href="#" id="all-records">Таблица рекордов</a>
+                    <a href="/points.html" id="more-records">Поиск рекордов</a>
+                    <div class="table-records"></div>
+                </div>
             </div>
-        </div>
-
-        <div id="matrix"></div>
-
-        <div class="info">
-            <a href="#" id="all-records">Таблица рекордов</a>
-            <a href="/points.html" id="more-records">Поиск рекордов</a>
-            <div class="table-records"></div>
         </div>
     </div>
+
 </body>
 </html>

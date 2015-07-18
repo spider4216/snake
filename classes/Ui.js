@@ -15,7 +15,8 @@ function Ui(game)
     {
         self.trackBarElement.slider({
             max: 2,
-            change: self.toSlide
+            change: self.toSlide,
+            value: 1
         });
     };
 
