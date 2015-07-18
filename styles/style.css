@@ -1,0 +1,177 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+    min-height: 100%;
+    padding: 20px 20px;
+}
+
+#matrix {
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.tools {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#matrix > div {
+    height: 20px;
+    width: 20px;
+    /*outline: 1px solid #939393;*/
+
+    float: left;
+}
+
+.body-snake {
+    background: url("../images/body.png") 0px 0px;
+    background-size: cover;
+}
+
+.head-snake {
+    background: url("../images/head.png") 0px 0px;
+    background-size: cover;
+}
+
+.fruit-apple {
+    background: url('../images/apple.png') 0px 0px;
+    background-size: cover;
+}
+
+.fruit-banana {
+    background: url('../images/banana.png') 0px 0px;
+    background-size: cover;
+}
+
+.fruit-garnet {
+    background: url('../images/garnet.png') 0px 0px;
+    background-size: cover;
+}
+
+.fruit-mandarin {
+    background: url('../images/mandarin.png') 0px 0px;
+    background-size: cover;
+}
+
+.fruit-pine {
+    background: url('../images/pine.png') 0px 0px;
+    background-size: cover;
+}
+
+.fruit-strawberry {
+    background: url('../images/strawberry.png') 0px 0px;
+    background-size: cover;
+}
+
+.frame-end {
+    outline: 5px solid red;
+}
+
+.push {
+    height: 200px;
+}
+
+
+.layout {
+    position: fixed;
+    z-index: 98;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.8);
+
+    display: none;
+}
+
+#new-score-modal .head {
+    text-align: center;
+}
+
+#new-score-modal .head p {
+    margin: 0px;
+    margin-bottom: 7px;
+}
+
+#new-score-modal .body {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.table-records {
+    min-width: 335px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    display: table;
+}
+
+.table-records table {
+    width: 100%;
+}
+
+.info > .table-records div > span {
+    display: table-cell;
+    padding-bottom: 10px;
+}
+
+.info > .table-records div > span.name {
+    width: 140px;
+}
+
+.info > .table-records div > span.score {
+    width: 50px;
+}
+
+.content-search-points {
+    text-align: center;
+}
+
+.content-search-points .search {
+    padding: 10px;
+    width: 70%;
+    text-align: center;
+}
+
+.output-content {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.output-content > div {
+    display: table;
+    padding: 5px;
+}
+
+.output-content > div > span{
+    padding: 5px;
+    display: table-cell;
+    width: 150px;
+}
+
+.levels {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.lvl-status {
+    margin-bottom: 10px;
+}
+
+.btn-container {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SIMPLE SNAKE</title>
+    <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="libraries/jquery-ui.min.css"/>
+    <link rel="stylesheet" href="libraries/jquery-ui.structure.min.css"/>
+    <link rel="stylesheet" href="libraries/jquery-ui.theme.min.css"/>
+
+    <script language="JavaScript" src="libraries/jquery-2.1.4.min.js"></script>
+    <script language="JavaScript" src="libraries/jquery-ui.min.js"></script>
+
+    <script language="JavaScript" src="ready.js"></script>
+    <script language="JavaScript" src="classes/Matrix.js"></script>
+    <script language="JavaScript" src="classes/Ui.js"></script>
+    <script language="JavaScript" src="classes/Game.js"></script>
+    <script language="JavaScript" src="classes/Snake.js"></script>
+    <script language="JavaScript" src="classes/Fruits.js"></script>
+    <script language="JavaScript" src="classes/Animation.js"></script>
+</head>
+<body>
+    <div class="layout"></div>
+
+    <div id="new-score-modal">
+        <div class="head">
+            <p class="count-ajax-title">Рекорд:</p>
+            <p class="count-ajax">0</p>
+        </div>
+
+        <div class="body">
+            <input type="text" id="name" placeholder="Ваше имя"/>
+
+            <div class="summary">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="push"></div>
+
+        <div class="tools">
+            <div class="levels">
+                <div class="track-bar"></div>
+
+                <div class="hidden">
+                    <label for="level1"><input type="radio" id="level1" value="1" name="level" class="lvl" checked/>Легко</label>
+                    <label for="level2"><input type="radio" id="level2" value="2" name="level" class="lvl"/>Средне</label>
+                    <label for="level3"><input type="radio" id="level3" value="3" name="level" class="lvl"/>Сложно</label>
+                </div>
+
+                <div class="lvl-status">
+                    <span>Легкий</span>
+                </div>
+
+                <div class="btn-container">
+                    <input type="button" value="Старт" class="start"/>
+                </div>
+            </div>
+
+            <div class="score">
+                <span class="label">Фрукты:</span>
+                <span class="count">0</span>
+            </div>
+        </div>
+
+        <div id="matrix"></div>
+
+        <div class="info">
+            <a href="#" id="all-records">Таблица рекордов</a>
+            <a href="/points.html" id="more-records">Поиск рекордов</a>
+            <div class="table-records"></div>
+        </div>
+    </div>
+</body>
+</html>
